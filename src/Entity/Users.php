@@ -59,7 +59,9 @@ class Users implements UserInterface
     {
         return $this->id;
     }
-
+    /**
+     * @see UserInterface
+     */
     public function getNom(): ?string
     {
         return $this->nom;
