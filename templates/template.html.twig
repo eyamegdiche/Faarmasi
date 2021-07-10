@@ -51,7 +51,7 @@
       </div>
 
       <!--logo start-->
-      <a href="{{ path('pharmacies_index')}}" class="logo"><img alt="" src="{{asset('assets/auth/images/LOGO.png')}}"></a>
+      <a href="{{ path('dashboard')}}" class="logo"><img alt="" src="{{asset('assets/auth/images/LOGO.png')}}"></a>
       <!--logo end-->
 
       <div class="nav search-row" id="top_menu">
@@ -115,7 +115,13 @@
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu">
-   
+   <li class="active">
+         
+           <a class="" href="{{ path('dashboard')}}">
+                          <i class="icon_house_alt"></i>
+                          <span>Dashboard</span>
+                      </a> 
+          </li>
           <li class="sub-menu">
             <a href="javascript:;" class="">
                           <i class="icon_document_alt"></i>
