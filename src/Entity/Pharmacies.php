@@ -44,17 +44,11 @@ class Pharmacies
      */
     private $commandes;
 
-    /**
-     * @ORM\ManyToMany(targetEntity=Clients::class)
-     */
-    private $Clients;
-
     public function __construct()
     {
         $this->Medicaments = new ArrayCollection();
         $this->Fournisseurs = new ArrayCollection();
         $this->commandes = new ArrayCollection();
-        $this->Clients = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -164,27 +158,10 @@ class Pharmacies
         return $this;
     }
 
-    /**
-     * @return Collection|Clients[]
-     */
-    public function getClients(): Collection
+
+    public function __toString() 
     {
-        return $this->Clients;
+        return (string) $this->nom; 
     }
-
-    public function addClient(Clients $client): self
-    {
-        if (!$this->Clients->contains($client)) {
-            $this->Clients[] = $client;
-        }
-
-        return $this;
-    }
-
-    public function removeClient(Clients $client): self
-    {
-        $this->Clients->removeElement($client);
-
-        return $this;
-    }
+    
 }

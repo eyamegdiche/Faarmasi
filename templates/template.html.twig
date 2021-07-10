@@ -51,7 +51,7 @@
       </div>
 
       <!--logo start-->
-      <a href="{{ path('dashboard')}}" class="logo"><img alt="" src="{{asset('assets/auth/images/LOGO.png')}}"></a>
+      <a href="{{ path('pharmacies_index')}}" class="logo"><img alt="" src="{{asset('assets/auth/images/LOGO.png')}}"></a>
       <!--logo end-->
 
       <div class="nav search-row" id="top_menu">
@@ -115,13 +115,7 @@
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu">
-          <li class="active">
-         
-           <a class="" href="{{ path('dashboard')}}">
-                          <i class="icon_house_alt"></i>
-                          <span>Dashboard</span>
-                      </a> 
-          </li>
+   
           <li class="sub-menu">
             <a href="javascript:;" class="">
                           <i class="icon_document_alt"></i>
@@ -153,8 +147,8 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
             <ul class="sub">
-              <li><a class="" href="{{ path('Medicaments_new')}}"> Ajouter Medicament</a></li>
-              <li><a class="" href="{{ path('Medicaments_index')}}">Lister Medicament</a></li>
+              <li><a class="" href="{{ path('medicaments_new')}}"> Ajouter Medicament</a></li>
+              <li><a class="" href="{{ path('medicaments_index')}}">Lister Medicament</a></li>
             {#  <li><a class="" href="{{ path('Medicaments_show')}}">Imprimer</a></li> #}
 
               
@@ -168,8 +162,8 @@
 
                       </a>
             <ul class="sub">
-              <li><a class="" href="{{ path('Clients_new')}}"> Ajouter Client</a></li>
-              <li><a class="" href="{{ path('Clients_index')}}">Lister Client</a></li>
+              <li><a class="" href="{{ path('clients_new')}}"> Ajouter Client</a></li>
+              <li><a class="" href="{{ path('clients_index')}}">Lister Client</a></li>
               
             </ul>
           </li>
@@ -181,8 +175,8 @@
 
                       </a>
             <ul class="sub">
-              <li><a class="" href="{{ path('Fournisseurs_new')}}"> Ajouter Fournisseur</a></li>
-              <li><a class="" href="{{ path('Fournisseurs_index')}}">Lister Fournisseur</a></li>
+              <li><a class="" href="{{ path('fournisseurs_new')}}"> Ajouter Fournisseur</a></li>
+              <li><a class="" href="{{ path('fournisseurs_index')}}">Lister Fournisseur</a></li>
               
             </ul>
                       
@@ -196,9 +190,9 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
             <ul class="sub">
-              <li><a class="" href="{{ path('Commandes_new')}}"> Ajouter Commande</a></li>
-              <li><a class="" href="{{ path('Commandes_index')}}">Lister Cammande</a></li>
-              <li><a class="" href="{{ path('Commandes_list')}}"> Imprimer</a></li>
+              <li><a class="" href="{{ path('commandes_new')}}"> Ajouter Commande</a></li>
+              <li><a class="" href="{{ path('commandes_index')}}">Lister Cammande</a></li>
+             {# <li><a class="" href="{{ path('commandes_show')}}"> Imprimer</a></li> #}
 
               
             </ul>
